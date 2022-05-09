@@ -180,15 +180,8 @@ int main(void) {
 
 	}     
 	
-	running = false; // AQUISITION loop Terminated
-	
 	// Print channel A, channel B, time of event
 	fprintf(fp, "%d\t %d\t %s", max_a, max_b, ctime(&rawtime));
-	
-	
-	
-
-
 	
 	// Close file, reset for next aquisition
 	fclose(fp);
